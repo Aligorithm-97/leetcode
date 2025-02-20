@@ -1,5 +1,15 @@
 # Important python usages
+"""
 
+Abstract Class : A class that can contain abstract methods and cannot be instantiated directly. It can have both abstract and regular methods.
+
+Interface : A structure that contains only method signatures. It supports multiple inheritance.
+
+Polymorphism : Allows the same method to behave differently. It is divided into Overriding and Overloading.
+
+Overloading : Methods defined in the same class with the same name but different parameters.
+
+"""
 
 def build_hash_map(keys: List[str], values: List[int]) -> Dict[str, int]:
     output_dict = {}
