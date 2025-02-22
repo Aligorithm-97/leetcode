@@ -1,4 +1,7 @@
 """
+                                DSA CheatSheet
+
+                OOP
 
 Abstract Class : A class that can contain abstract methods and cannot be instantiated directly. It can have both abstract and regular methods.
 
@@ -10,7 +13,18 @@ Overloading : Methods defined in the same class with the same name but different
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
-                                        DSA Neetcode
+                System Design
+
+// TODO add here
+
+
+
+   - Sliding Window
+   - Two Pointers
+   - Prefix Sums
+   - Fast and Slow Pointers
+
+
 
 Static arr : The problem with static array they have fixed size. Python offers dynamic arrays as default.
 
@@ -137,7 +151,7 @@ Tree / Binary Tree
                 -Postorder traversal -> left-right-root
             Breadth First Search
                 -LevelOrder traversal -> level1-level2 etc.
-        Binary Tree with array -> first index empty and left node 2x right node 2x+1
+        Binary Tree with array -> first index empty and left node 2x right node 2x+1 parent i/2
 
 
 
@@ -165,6 +179,8 @@ Avl Tree
 --------------------------------------------------------------
 
 Binary Heap
+
+    Heap / Priority Queue : Min or max -> pop smallest or largest first
 
     Binary Heap is a Binary Tree with following properties:
         A Binary Heap is either Min Heap or Max Heap. In a Min Binary Heap, the key at root must be minimum among all keys present in Binary Heap.
