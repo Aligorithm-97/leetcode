@@ -15,6 +15,26 @@ Overloading : Methods defined in the same class with the same name but different
 
                 System Design
 
+
+    Vertical Scaling : Updating the server like cpu ram etc but it eventually reaches the max point.
+    Horizontal Scaling : We create multiple servers and we use load balancer to decide when to switch between servers. Ex / After 100 users switch to the other service.
+    Logging (external) : Trace the logs for every users. If there is an error immidiately fix it.
+    Metrics (external) : How the system reacts for user actions . Can it handle requests without an issue. Time series. Positive or negative trend ? cpu can handle requests or has a bottleneck .
+    Alerts : When something bad happens . Alert system takes info from metrics and email developers
+
+                Design Requirements
+    1 - Move Data
+    2 - Store Data
+    3 - Transform Data
+
+    Availability = It should be 99.999 optimal. Which means in a year system only off 5 minutes. Service Level Objective(SLO) < Service Level Aggreement(SLA)(refund) -> uptime / uptime + downtime
+    Reliability -> Probability system wont fail 
+    Fault Tolerance -> If one server is down and we can continue with the other one the system has fault tolerance.
+    Redundancy -> It is like copy. Server has an identical server so its redundant but it is required in order to prevent failures.
+    Throughput -> measured by request per second - how many concurrent user can system handle ---> For database = Queries per second(QPS) ---> For data = Bytes per second
+    Latency -> Entire operation time -> how long each individual request takes -> CDN
+
+
 // TODO add here
 
 
