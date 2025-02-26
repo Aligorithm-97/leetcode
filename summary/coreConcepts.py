@@ -34,6 +34,13 @@ Overloading : Methods defined in the same class with the same name but different
     Throughput -> measured by request per second - how many concurrent user can system handle ---> For database = Queries per second(QPS) ---> For data = Bytes per second
     Latency -> Entire operation time -> how long each individual request takes -> CDN
 
+                Networking
+    Ip Header : Metadata from ip --> to ip etc
+    Tcp Ip : Sequence number
+    Static and Dynamic ip adresses --> Check Dynamic Dns
+    Tcp / Ip : Reliable -> 3 way handshake
+    Udp / Ip : Faster but no guarantee for data integrity --> Commonly used for streaming data like live videos etc.
+
 
 // TODO add here
 
