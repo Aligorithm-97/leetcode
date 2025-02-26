@@ -40,6 +40,17 @@ Overloading : Methods defined in the same class with the same name but different
     Static and Dynamic ip adresses --> Check Dynamic Dns
     Tcp / Ip : Reliable -> 3 way handshake
     Udp / Ip : Faster but no guarantee for data integrity --> Commonly used for streaming data like live videos etc.
+    
+                API
+
+    RPC : Remote Procedure Call. Ex/ gRPC
+    Info : 100-199
+    Success : 200-299
+    Redirection : 300-399
+    Client Error : 400-499
+    Server Error : 500-599
+
+    Websockets : Connect via http and update response immediately
 
 
 // TODO add here
