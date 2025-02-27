@@ -52,6 +52,12 @@ Overloading : Methods defined in the same class with the same name but different
 
     Websockets : Connect via http and update response immediately
 
+    Do not add verbs to http endpoints -> getVideos should be videos
+
+    GraphQL : Uses htpp post. Solves overfetching and also underfetching ( making lots of request ). Single endpoint -> Query and mutation
+
+    gRPC : HTTP/2 . Mostly used server to server communications. Protocol Buffers
+
 
 // TODO add here
 
