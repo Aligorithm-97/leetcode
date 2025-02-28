@@ -75,6 +75,22 @@ Overloading : Methods defined in the same class with the same name but different
     Static Content : Ex / images , videos
     Push cdn & pull cdn : Pull CDN is better because push cdn strategy we have lots of unnecessary data
 
+                Proxies & Load Balancers
+    Forward and Reverse Proxy
+    Proxy Server : Ex / you cant access a server but proxy server can . So proxy server access the wanted server for you ---- or opposite proxy server can limit your actions like corporate proxy cant access instagram etc
+    Forward proxy ex : VPNs hides the client
+    Reverse proxy : ex : CDNs & Load Balancer hides the actual server
+
+    Load Balancer Algorithms:
+        Round Robin : first request goes server 1 second goes 2 ... cycles requests
+        Weighted Round Robin : We arrange request by percentage like %50 of the requests will go server 1 etc.
+        Least Connections : We send the coming request to the server which has least connections.
+        Location : location based arrangement
+        Hashing
+
+        Layer 4 vs Layer 7 : Layer 4 is tcp layer, Layer 7 is the application layer --> Layer 4 load balancer will be faster but less flexible because can see application data /// see more maglev paper by google
+
+
 // TODO add here
 
 
