@@ -70,6 +70,11 @@ Overloading : Methods defined in the same class with the same name but different
         LRU : Least recently used
         LRU : Least frequently used
 
+                CDN ( Content Delivery Network )
+
+    Static Content : Ex / images , videos
+    Push cdn & pull cdn : Pull CDN is better because push cdn strategy we have lots of unnecessary data
+
 // TODO add here
 
 
