@@ -90,6 +90,17 @@ Overloading : Methods defined in the same class with the same name but different
 
         Layer 4 vs Layer 7 : Layer 4 is network(Tcp) layer, Layer 7 is the application layer --> Layer 4 load balancer will be faster but less flexible because can see application data /// see more maglev paper by google
 
+        
+                Consistent Hashing
+    According to ip address we hash the value and redirect users by their ip address so everytime users will redirect to the same server. This can be helpful when working with in memory redis etc.
+    If we want to map users how we want to and we need consistent data than we need to use consistent hashing.
+    When one server crashes the requests goes to the nearest server according to the hashing algorithm.
+    Clockwise strategy : nearest server in clockwise direction.
+
+    Rendezvous hashing is another approach to consistent hashing.
+
+    Consistent hashing consists of 3 main parts : Hashkey , HashFunction , Nodes
+
 
 // TODO add here
 
