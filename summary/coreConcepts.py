@@ -88,7 +88,7 @@ Overloading : Methods defined in the same class with the same name but different
         Location : location based arrangement
         Hashing
 
-        Layer 4 vs Layer 7 : Layer 4 is tcp layer, Layer 7 is the application layer --> Layer 4 load balancer will be faster but less flexible because can see application data /// see more maglev paper by google
+        Layer 4 vs Layer 7 : Layer 4 is network(Tcp) layer, Layer 7 is the application layer --> Layer 4 load balancer will be faster but less flexible because can see application data /// see more maglev paper by google
 
 
 // TODO add here
