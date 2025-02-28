@@ -52,16 +52,23 @@ Overloading : Methods defined in the same class with the same name but different
 
     Websockets : Connect via http and update response immediately
 
-    Do not add verbs to http endpoints -> getVideos should be videos for rest apis
-
     GraphQL : Uses htpp post. Solves overfetching and also underfetching ( making lots of request ). Single endpoint -> Query and mutation
 
     gRPC : HTTP/2 . Mostly used server to server communications. Protocol Buffers
 
                 API Design
     
-    .....
+    Do not add verbs to http endpoints -> getVideos should be videos for rest apis
 
+                Caching
+    Write-around cache : simply only update database
+    Write-through cache : immidiately update cache then update database
+    Write-back cache : Faster but inconsistent -> simply only update cache and periodically update database
+    Eviction Policy : deciding which part of the cache will remove after cache is full
+        Random
+        FIFO
+        LRU : Least recently used
+        LRU : Least frequently used
 
 // TODO add here
 
