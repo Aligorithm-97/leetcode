@@ -101,6 +101,13 @@ Overloading : Methods defined in the same class with the same name but different
 
     Consistent hashing consists of 3 main parts : Hashkey , HashFunction , Nodes
 
+                SQL
+    ACID stands for : Atomicity , Consistency , Isolation , Durability
+    Atomicity : A transaction is treated as a single atomic unit. All steps that make up the transaction must succeed or the entire transaction rolls back. If they all succeed, the changes made by the transaction are permanently committed to the managing system.
+    Consistency : A transaction must preserve the consistency of the underlying data. The transaction should make no changes that violate the rules or constraints placed on the data.
+    Isolation : A transaction is isolated from all other transactions. Transactions can run concurrently only if they don't interfere with each other.
+    Durability : A transaction that is committed is guaranteed to remain committed -- that is, all changes are made permanent and will not be lost if an event such as a power failure should occur. 
+    
 
 // TODO add here
 
