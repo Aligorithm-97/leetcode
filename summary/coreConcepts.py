@@ -124,6 +124,13 @@ Overloading : Methods defined in the same class with the same name but different
         Ex / Half of the table goes one db with external server and other one goes another. It can be more like 10 100 etc
         ShardKey : How to split database
 
+                CAP Theorem
+    C - Consistency : Data consistency between databases
+    A - Availability : 
+    P - Partition Tolerance : When one of the databases crashes other ones should be able to run without issue.
+
+    We choose p always and c or a.
+
 
 // TODO add here
 
