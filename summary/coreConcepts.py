@@ -131,6 +131,13 @@ Overloading : Methods defined in the same class with the same name but different
 
     We choose p always and c or a.
 
+                Object Storage
+    Aws S3
+    Stored in a flat way
+    BLOB : Binary Large Object / Images , videos
+    We cant update the files only read and write
+
+
 
 // TODO add here
 
