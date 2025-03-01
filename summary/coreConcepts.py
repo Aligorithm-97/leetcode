@@ -115,7 +115,14 @@ Overloading : Methods defined in the same class with the same name but different
 
     Scaling NoSql : Scaling sql databases horizontally is hard because of ACID but NoSql can scale with ease.
     NoSql version ACID :  BaSE -> Eventual Consistency = We have two replicas one is leader one is follower
-    
+
+                Replication & Sharding
+    Leader - Follower or Master - Slave Replication : Leader can write/read and Follower can only read
+    Multi Master Replication : Multiple masters 
+
+    Sharding : If we have large amount of data . We take a database broken it into smaller databases aka database shards
+        Ex / Half of the table goes one db with external server and other one goes another. It can be more like 10 100 etc
+        ShardKey : How to split database
 
 
 // TODO add here
