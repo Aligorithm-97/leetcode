@@ -141,6 +141,18 @@ Overloading : Methods defined in the same class with the same name but different
     Pub/Sub : Publisher / Subscriber
     Topic
 
+                MapReduce
+    Batch vs Streaming
+    WordCount : Batch processing use case
+    Real time : Streaming
+    Batch works with already exist data streaming is real time. 
+
+    MapReduce : One of the workers can be master and decide how data must be splitted.
+        First Step Map layer : First input split among the workers ex 1/3 and map the input according to given map function. 
+        Middle Step Shuffle : Shuffle words
+        Last Step Reduce :  Aggregate the data and group "the" word 110 occurence.
+        Ex : Batch : Spark , Hadoop -- Streaming : Flink
+
 
 
 // TODO add here
