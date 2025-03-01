@@ -137,6 +137,10 @@ Overloading : Methods defined in the same class with the same name but different
     BLOB : Binary Large Object / Images , videos
     We cant update the files only read and write
 
+                Message Queues
+    Pub/Sub : Publisher / Subscriber
+    Topic
+
 
 
 // TODO add here
