@@ -107,7 +107,16 @@ Overloading : Methods defined in the same class with the same name but different
     Consistency : A transaction must preserve the consistency of the underlying data. The transaction should make no changes that violate the rules or constraints placed on the data.
     Isolation : A transaction is isolated from all other transactions. Transactions can run concurrently only if they don't interfere with each other.
     Durability : A transaction that is committed is guaranteed to remain committed -- that is, all changes are made permanent and will not be lost if an event such as a power failure should occur. 
+
+                NoSql
+    Document database : Mongo DB
+    Write-column database : when you have a situation needs lots of writing and minor reading. Ex / Casssandra , BigTable
+    Graph based database : Nodes etc
+
+    Scaling NoSql : Scaling sql databases horizontally is hard because of ACID but NoSql can scale with ease.
+    NoSql version ACID :  BaSE -> Eventual Consistency = We have two replicas one is leader one is follower
     
+
 
 // TODO add here
 
