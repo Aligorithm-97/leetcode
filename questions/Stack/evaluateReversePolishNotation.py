@@ -20,6 +20,7 @@ class Solution:
         return stack[0]
     
 
+
 sol = Solution()
 tokens = ["1","2","+","3","*","9","-"]
 print(sol.evalRPN(tokens))
