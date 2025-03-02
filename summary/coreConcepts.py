@@ -159,10 +159,10 @@ Overloading : Methods defined in the same class with the same name but different
 
 
 
-   - Sliding Window
-   - Two Pointers
-   - Prefix Sums
-   - Fast and Slow Pointers
+- Sliding Window
+- Two Pointers
+- Prefix Sums
+- Fast and Slow Pointers
 
 
 
@@ -193,28 +193,28 @@ LinkedList
 Singly linkedList
 
         Location first
-             node.next = head;
-             head = node;
+            node.next = head;
+            head = node;
 
         Location last
-             node.next = null;
-             last.next = node;
-             tail = node;
+            node.next = null;
+            last.next = node;
+            tail = node;
 
         Somewhere in linkedList not first not last
-             Find location with loop
-             current.next = node;
-             node.next = nextNode;
+            Find location with loop
+            current.next = node;
+            node.next = nextNode;
 
         Time and Space Complexity
 
                         Time     Space
-             Creation   O(1)      O(1)
-             Insertion  O(n)      O(1)
-             Searching  O(n)      O(1)
-             Traversing O(n)      O(1)
-             Delete 1   O(n)      O(1)
-             Delete all O(1)      O(1)
+            Creation   O(1)      O(1)
+            Insertion  O(n)      O(1)
+            Searching  O(n)      O(1)
+            Traversing O(n)      O(1)
+            Delete 1   O(n)      O(1)
+            Delete all O(1)      O(1)
 
 Circular Singly LinkedList
 Doubly LinkedList
