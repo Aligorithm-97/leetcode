@@ -180,6 +180,13 @@ Overloading : Methods defined in the same class with the same name but different
     Prevent Collusion = Url generator also has keys to generate tiny urls and after using them mark them as true in order to use them again. We need to use sql in order to take advantege of ACID
     And also after a tinyurl expired then we can go to the keys database and return the used property to false and use it again.
 
+                Design Twitter
+    Functional Requirements : Follow other users , create tweets , view feed
+    Non-Functional Requirements : 
+        Users : 500M, daily 200M ---> 200M people read 100 tweets per day it makes 20B read/day. 
+        Tweets : 1Mb can be because it can be a video --> so it is huge like 20 petabyte daily.
+    We can use sharding and user id as shard key in order to make it better. Simply we put people's tweets according to region or relation.
+
 // TODO add here
 
 
