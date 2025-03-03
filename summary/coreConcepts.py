@@ -187,6 +187,13 @@ Overloading : Methods defined in the same class with the same name but different
         Tweets : 1Mb can be because it can be a video --> so it is huge like 20 petabyte daily.
     We can use sharding and user id as shard key in order to make it better. Simply we put people's tweets according to region or relation.
 
+                Design Discord
+    Ex / 5 million daily users and 50 million messages per day design a system handles that specific situation. 
+        20k user per channel lets say. 10 k messages per channel
+    High Level Design:
+        Can use polling but not that efficient instead use Websockets
+        Discord uses NoSql : at first they used mongoDb but after that they are using cassandra
+
 // TODO add here
 
 
