@@ -156,7 +156,7 @@ Overloading : Methods defined in the same class with the same name but different
                 System Design Interview
     
     How to approach : Scoping -> What specific part do we want to focus on ?
-    Do not make assumptions clearify the requirements. What exactly the interviewer wants from you ?
+    Do not make assumptions clarify the requirements. What exactly the interviewer wants from you ?
 
     Functional Requirements : The apps requirements
     Non-Functional Requirements : Scalability -> throughput, storage capacity --- Performance -> Latency , availability , 
@@ -164,6 +164,16 @@ Overloading : Methods defined in the same class with the same name but different
     Back of the envelope calculations :
         Thoroughput : 60 * 60 * 24 --> 86400
         10 billion / 100k approximately = 100000 read per second and 100 write per second
+
+                Design a Rate Limiter
+    Limit the user actions. Like you cant upload more than 20 videos to youtube etc. 429 error code.
+    Fail-open : If the rate limiter down system goes on like it was never exists. 
+    Fail-closed : Whole system goes down with it.
+    Clarify the needs up front. Do not design a system unrelated.
+
+    Fixed window algorithm : fixed size requests like in 1 minute only allow 100 request 
+    Other algorithms : Sliding window , token bucket , sliding window counter
+    Also we can cache the rules for better performance since they are not changing too often.
 
     
 
