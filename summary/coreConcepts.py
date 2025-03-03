@@ -203,7 +203,7 @@
         upload : 
             50 million uploads is huge so we have to use load balancer and multiple servers which are scaled horizontally.
             For videos we should obviously use object store.
-            Since there are lots of content and large contents we should use queue 
+            Since there are lots of contents and large contents we should use queue 
             Should use rate limiter
 
         And also since it is a huge traffic and involves all parts of the world we should use CDNs
