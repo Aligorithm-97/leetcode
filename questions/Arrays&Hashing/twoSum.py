@@ -2,9 +2,9 @@ from typing import List
 
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-       pmap = {}
+        pmap = {}
 
-       for i, n in enumerate(nums):
+        for i, n in enumerate(nums):
             diff = target - n
             if diff in pmap:
                 return [pmap[diff],i]
