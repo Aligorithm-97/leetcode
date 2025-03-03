@@ -153,7 +153,19 @@ Overloading : Methods defined in the same class with the same name but different
         Last Step Reduce :  Aggregate the data and group "the" word 110 occurence.
         Ex : Batch : Spark , Hadoop -- Streaming : Flink
 
+                System Design Interview
+    
+    How to approach : Scoping -> What specific part do we want to focus on ?
+    Do not make assumptions clearify the requirements. What exactly the interviewer wants from you ?
 
+    Functional Requirements : The apps requirements
+    Non-Functional Requirements : Scalability -> throughput, storage capacity --- Performance -> Latency , availability , 
+
+    Back of the envelope calculations :
+        Thoroughput : 60 * 60 * 24 --> 86400
+        10 billion / 100k approximately = 100000 read per second and 100 write per second
+
+    
 
 // TODO add here
 
