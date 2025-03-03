@@ -3,13 +3,13 @@
 
                 OOP
 
-Abstract Class : A class that can contain abstract methods and cannot be instantiated directly. It can have both abstract and regular methods.
+    Abstract Class : A class that can contain abstract methods and cannot be instantiated directly. It can have both abstract and regular methods.
 
-Interface : A structure that contains only method signatures. It supports multiple inheritance.
+    Interface : A structure that contains only method signatures. It supports multiple inheritance.
 
-Polymorphism : Allows the same method to behave differently. It is divided into Overriding and Overloading.
+    Polymorphism : Allows the same method to behave differently. It is divided into Overriding and Overloading.
 
-Overloading : Methods defined in the same class with the same name but different parameters.
+    Overloading : Methods defined in the same class with the same name but different parameters.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -194,6 +194,24 @@ Overloading : Methods defined in the same class with the same name but different
         Can use polling but not that efficient instead use Websockets
         Discord uses NoSql : at first they used mongoDb but after that they are using cassandra
 
+                Design Youtube
+    Ex / 1 billion daily users and 5 billion views 50 million upload
+        Availability > Consistency : should be like that because users should view their recommended videos instantly. They can see the latest upload little bit later.
+    Youtube uses vitess as a middle layer. Research that.
+    
+    High Level Design:
+        upload : 
+            50 million uploads is huge so we have to use load balancer and multiple servers which are scaled horizontally.
+            For videos we should obviously use object store.
+            Since there are lots of content and large contents we should use queue 
+            Should use rate limiter
+
+        And also since it is a huge traffic and involves all parts of the world we should use CDNs
+        LRU cache can be implemented
+
+
+
+    
 // TODO add here
 
 
