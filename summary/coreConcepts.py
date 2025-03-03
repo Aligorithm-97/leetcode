@@ -175,7 +175,10 @@ Overloading : Methods defined in the same class with the same name but different
     Other algorithms : Sliding window , token bucket , sliding window counter
     Also we can cache the rules for better performance since they are not changing too often.
 
-    
+                Design TinyUrl
+    NoSql would be better since we dont need to join any queries etc. We just need to store tinyUrls.
+    Prevent Collusion = Url generator also has keys to generate tiny urls and after using them mark them as true in order to use them again. We need to use sql in order to take advantege of ACID
+    And also after a tinyurl expired then we can go to the keys database and return the used property to false and use it again.
 
 // TODO add here
 
