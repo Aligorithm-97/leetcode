@@ -199,6 +199,21 @@
         And also since it is a huge traffic and involves all parts of the world we should use CDNs
         LRU cache can be implemented
 
+        
+                Design Google Drive
+
+    File System(HDFS) vs Object Storage : 
+        File system is well organized but scaling is harder.
+        Object store can easily scale but you cant edit files unlike file system.
+        Object stores hold data in a flat data structure.
+        Block-level Storage : The file is broken up into blocks like 4 mb chunks. If we have duplicate blocks we only store 1 instance. -> Deduplication
+        Content Addressable Storage
+        Also block-level storage really useful for specific situations like user uploads half of the file and then user can upload from where s/he left.
+        One improvement can be : Create a garbage collection service that checks kv store to find unreferenced ids and delete them from object store. In this way we use deduplication and we get rid of unreferenced files.
+        HeartBeat : How to find out the LoadBalancer up or not ? Continuously send a heartbeat to another server. Ex/ zookeeper
+
+
+
 // TODO System Design and oop 
 
                 OOP
