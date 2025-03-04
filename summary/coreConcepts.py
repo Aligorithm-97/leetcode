@@ -212,6 +212,12 @@
         One improvement can be : Create a garbage collection service that checks kv store to find unreferenced ids and delete them from object store. In this way we use deduplication and we get rid of unreferenced files.
         HeartBeat : How to find out the LoadBalancer up or not ? Continuously send a heartbeat to another server. Ex/ zookeeper
 
+                Design Google Maps
+    GeoCoding
+    Spatial Indexing = Quadtrees , Geohashing
+    Check uber artical about hexagons = https://www.uber.com/en-TR/blog/h3/
+    
+
 
 
 // TODO System Design and oop 
