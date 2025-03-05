@@ -218,6 +218,25 @@
     Check uber artical about hexagons = https://www.uber.com/en-TR/blog/h3/
     
 
+                Design Key-Value Store
+
+    Must be durable. Need isolation. We should handle conflicts.
+    Must be scalable. Replication and sharding.
+
+    Key-value Store High Level Design:
+        1 : Indexing Data (ex / Btrees,B+trees) = LSM tree
+        2 : Replication : Helps scaling and fault tolerance.
+        3 : Partioning : Horizontal partioning split data into node databases.
+        4 : Node Failure : We have to have a recovery plan.
+        5 : Concurrent Writes : Isolation.
+
+    LSM Tree : Long-Structured Merge Tree used by cassandra:
+        Writes are batched in memory:
+            Write first in memory aka mem table.
+            Periodically writes to sstable aka Sorted Strings Table.
+
+    Quorum : 2 types write and read.
+
 
 
 // TODO System Design and oop 
