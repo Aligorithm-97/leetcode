@@ -237,6 +237,15 @@
 
     Quorum : 2 types write and read.
 
+    Partioning and Node Failure:
+    Vnodes : Placing virtual nodes thorough circle to achieve more consistent data sharing. It is a Consistent Hashing Strategy. 
+        Ex / We place 20 node on a circle if one of them goes down with it virtual node obviously we send the exposed data to the clockwise nearest node. But in this way we just move small amount of data.
+        We can detect node failures using external service like zookeeper. Another way is gossip : simply nodes send each other their heart beats . 
+    Concurrent writes:
+        LWW (Last write wins) : With cassandra last write always wins. 
+        Dynamo vector clock : hold a version like [node , version]
+
+    
 
 
 // TODO System Design and oop 
