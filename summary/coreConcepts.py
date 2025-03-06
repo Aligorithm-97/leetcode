@@ -265,6 +265,11 @@
                 Factory Method : Abstracting Details
     Simple Factory : Bunch of if or switch statements to decide which one to return. It violates open/closed principle.
     Factory Method should be an interface or abstract class. And also it has seperate creator class like for the burger example cheeseCreator,DeluxCreator etc.
+
+                Singleton
+    One instance. Shared State
+    Redux uses singleton pattern
+    Sometimes singleton can be an anti-pattern (Rigid)
             
 
 // TODO System Design and oop 
