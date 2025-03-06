@@ -246,6 +246,17 @@
         Dynamo vector clock : hold a version like [node , version]
 
     
+                Design Distributed Message Queue
+    
+    PUB/SUB : We have publisher and subscribers and we send info from pub to sub via topics. aka Producer Consumer
+    Funcional Req : Fanout , Retain messages until delivered , at least once delivery
+    Non-functional req : Scalable , Persistent storage , Throughput
+    High Level Design : 
+        Publish Forwarders and subscriber forwarders
+        We store messages in a database to persist data. Also we shard the database by topic. And we create subscriptions for subscribers.
+        We have a db called metadata to hold datas like : which topics exists , which subsriptions exists.
+        The reciever sends back an ack to inform sender.
+        We have to replicate the message dbs to prevent data loss.
 
 
 // TODO System Design and oop 
