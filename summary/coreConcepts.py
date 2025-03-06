@@ -3,7 +3,7 @@
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
-                System Design
+                        System Design
 
 
     Vertical Scaling : Updating the server like cpu ram etc but it eventually reaches the max point.
@@ -258,6 +258,14 @@
         The reciever sends back an ack to inform sender.
         We have to replicate the message dbs to prevent data loss.
 
+
+        
+                        Design Patterns
+
+                Factory Method : Abstracting Details
+    Simple Factory : Bunch of if or switch statements to decide which one to return. It violates open/closed principle.
+    Factory Method should be an interface or abstract class. And also it has seperate creator class like for the burger example cheeseCreator,DeluxCreator etc.
+            
 
 // TODO System Design and oop 
 
