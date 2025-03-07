@@ -309,6 +309,11 @@
     Enables dynamic behavior switching: The pattern enables clients to switch between different strategies at runtime, allowing for flexible and dynamic behavior changes.
     Promotes object collaboration: The pattern encourages collaboration between a context object and strategy objects, where the context delegates the execution of a behavior to a strategy object.
 
+                Observer
+    Its all about notifications.
+    1 - subscribe to the notification bell as an example so they are observers and they observe the subject.
+    Real Life Ex / Pub-Sub systems
+
 
 
 
