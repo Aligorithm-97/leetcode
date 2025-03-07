@@ -295,6 +295,15 @@
     Its about adding or changing behaviour. It prevent classes to turn into god classes.
     Instead of inheritance we are solving the problem with composition.
 
+                Facade
+    Wrapper class that group functionalities for better usage. Like we have a smarthome class and we want to set brightness tempreture etc. Instead of user doing it one by one, we create a class called SmartHomeFacade and it has just movie mode and focus mode.
+
+
+
+
+
+
+
 // TODO System Design and oop 
 
                 OOP
