@@ -291,6 +291,10 @@
                 Adapter
     Makes a class compatible to another one. Uses wrapper classes.
 
+                Decorator
+    Its about adding or changing behaviour. It prevent classes to turn into god classes.
+    Instead of inheritance we are solving the problem with composition.
+
 // TODO System Design and oop 
 
                 OOP
