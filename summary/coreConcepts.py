@@ -299,6 +299,17 @@
     Wrapper class that group functionalities for better usage. Like we have a smarthome class and we want to set brightness tempreture etc. Instead of user doing it one by one, we create a class called SmartHomeFacade and it has just movie mode and focus mode.
 
 
+                    Behavioural Patterns
+
+                Strategy
+    The Strategy is a behavioural pattern that is used to define a family of algorithms that can be chosen at runtime.
+    This way, the client code can change the behavior of a given context at runtime, allowing for greater flexibility.
+    Defines a family of algorithms: The pattern allows you to encapsulate multiple algorithms or behaviors into separate classes, known as strategies.
+    Encapsulates behaviors: Each strategy encapsulates a specific behavior or algorithm, providing a clean and modular way to manage different variations or implementations.
+    Enables dynamic behavior switching: The pattern enables clients to switch between different strategies at runtime, allowing for flexible and dynamic behavior changes.
+    Promotes object collaboration: The pattern encourages collaboration between a context object and strategy objects, where the context delegates the execution of a behavior to a strategy object.
+    https://www.geeksforgeeks.org/strategy-pattern-set-1/
+
 
 
 
