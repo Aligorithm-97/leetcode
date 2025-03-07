@@ -314,7 +314,9 @@
     1 - subscribe to the notification bell as an example so they are observers and they observe the subject.
     Real Life Ex / Pub-Sub systems
 
-
+                State
+    *State machines*
+    Instead of writing too many if blocks we create classes and each class hold its state and update it like in the traffic light example. We create 3 classes greenstate,yellowstate,redstate for yellow we hold prevState etc.
 
 
 
