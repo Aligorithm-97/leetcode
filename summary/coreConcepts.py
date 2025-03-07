@@ -262,7 +262,7 @@
         
                         Design Patterns
 
-                        
+
                     Creational Patterns
 
                 Factory Method : Abstracting Details
@@ -284,6 +284,12 @@
     .clone method = replicates the object .
     For every client we create new object instance. And also for the field we deep copy them.
     In spring boot you can choose singleton or prototype 
+
+
+                    Structural Patterns
+
+                Adapter
+    Makes a class compatible to another one. Uses wrapper classes.
 
 // TODO System Design and oop 
 
