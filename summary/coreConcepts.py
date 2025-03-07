@@ -260,7 +260,7 @@
 
 
         
-                        Design Patterns
+                        Design Patterns = ***** https://www.geeksforgeeks.org/software-design-patterns/ *****
 
 
                     Creational Patterns
@@ -308,8 +308,6 @@
     Encapsulates behaviors: Each strategy encapsulates a specific behavior or algorithm, providing a clean and modular way to manage different variations or implementations.
     Enables dynamic behavior switching: The pattern enables clients to switch between different strategies at runtime, allowing for flexible and dynamic behavior changes.
     Promotes object collaboration: The pattern encourages collaboration between a context object and strategy objects, where the context delegates the execution of a behavior to a strategy object.
-    https://www.geeksforgeeks.org/strategy-pattern-set-1/
-
 
 
 
