@@ -319,9 +319,6 @@
     Instead of writing too many if blocks we create classes and each class hold its state and update it like in the traffic light example. We create 3 classes greenstate,yellowstate,redstate for yellow we hold prevState etc.
 
 
-
-// TODO System Design and oop 
-
                 OOP
 
     Abstract Class : A class that can contain abstract methods and cannot be instantiated directly. It can have both abstract and regular methods.
