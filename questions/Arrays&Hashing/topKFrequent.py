@@ -12,15 +12,15 @@ class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
         res = {}
         for num in nums:    
-            res[num] = 1 + res.get(num,0)
+            res[num] = 1 + res.get(num,0) # get if there is a value otherwise return 0. At this step we create frequency table
 
         arr = []
         for num ,cnt in res.items():
-            arr.append([cnt,num])
-        arr.sort()
+            arr.append([cnt,num]) # create frequency and number couples
+        arr.sort() # sort them
         result = []
         while len(result) < k:
-            result.append(arr.pop()[1])
+            result.append(arr.pop()[1]) # pop k times
         return res
 
  
@@ -46,12 +46,12 @@ class SolutionTwo:
             count[num] = 1 + count.get(num,0)
         heap = []
         for num in count.keys():
-            heapq.heappush(heap,(count[num],num))
+            heapq.heappush(heap,(count[num],num)) # for this solution we use heap to get rid of sorting phase.
             if len(heap) > k:
-                heapq.heappop(heap)
+                heapq.heappop(heap) # pop until k elements remains.
         res = []
         for i in range(k):
-            res.append(heapq.heappop(heap)[1])
+            res.append(heapq.heappop(heap)[1]) # append remainings to res.
         return res
 
 soltwo = SolutionTwo()
@@ -68,11 +68,13 @@ space : o(n)
 class SolutionThree:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
         count = {}
-        freq = [[] for i in range(len(nums)+1)]
+        freq = [[] for i in range(len(nums)+1)] # Create a bucket 
         for num in nums:
             count[num] = 1 + count.get(num,0)
-        for num,cnt in count.items():
+        print(count)
+        for num,cnt in count.items(): # Use bucket sorting to avoid other types of sorting. With bucket sort we achieve o(n) instead of o(nlog(n))
             freq[cnt].append(num)
+        print(freq)
         res = []
         for i in range(len(freq)-1,0,-1):
             for num in freq[i]:
