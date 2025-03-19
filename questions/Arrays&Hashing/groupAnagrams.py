@@ -39,7 +39,7 @@ class SolutionTwo:
             count = [0] * 26
             for c in s :
                 count[ord(c) - ord('a')] += 1
-            res[tuple(count)].append(s)
+            res[tuple(count)].append(s) # tuple for using array as key.
         return list(res.values())
     
 
