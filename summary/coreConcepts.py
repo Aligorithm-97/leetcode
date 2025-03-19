@@ -320,9 +320,6 @@
 
     
 
-
-// TODO System Design and oop 
-
                 OOP
 
     Abstract Class : A class that can contain abstract methods and cannot be instantiated directly. It can have both abstract and regular methods.
