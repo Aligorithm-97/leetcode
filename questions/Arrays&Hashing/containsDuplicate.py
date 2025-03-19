@@ -7,6 +7,8 @@ Solution with HashSet Length
 time : o(n)
 space : o(n)
 
+Solution explanation : Simply put the nums into a set if there is a duplicate its length will be smaller.
+
 """
 
 class Solution:
@@ -24,6 +26,7 @@ Solution with Sorting
 time : o(nlogn)
 space : o(n)
 
+Solution explanation : Simply sort the numbers and compare one by one.
 """
 
 class SolutionTwo:
