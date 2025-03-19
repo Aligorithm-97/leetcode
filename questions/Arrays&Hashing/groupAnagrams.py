@@ -36,10 +36,10 @@ class SolutionTwo:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         res = defaultdict(list)
         for s in strs:
-            count = [0] * 26
+            count = [0] * 26 # Create an array for 26 letters
             for c in s :
-                count[ord(c) - ord('a')] += 1
-            res[tuple(count)].append(s) # tuple for using array as key.
+                count[ord(c) - ord('a')] += 1 # Increase by their count according to their occurence
+            res[tuple(count)].append(s) # Tuple for using array as key.
         return list(res.values())
     
 
