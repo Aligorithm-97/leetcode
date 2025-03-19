@@ -14,7 +14,7 @@ class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         res = defaultdict(list)
         for s in strs:
-            sortedS = ''.join(sorted(s))
+            sortedS = ''.join(sorted(s)) # All strings must be sorted so we can detect the same ones like eat and tea they both will be "aet" . Cant use directly sorted(s) because it returns array.
             res[sortedS].append(s)
         return list(res.values())
     
