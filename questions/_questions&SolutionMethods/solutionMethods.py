@@ -19,4 +19,6 @@
 
 7 = LeetCode Problem 238 - Product of Array Except Self : Can solve with brute force but it has n2 time complexity. Another solution is using division o(n) time o(1) space. And finally it can be solved with prefix suffix it is also o(n) time and o(1) space.
 
+8 = LeetCode Problem 36 - Valid Sudoku : Use Hashset aka defaultdict(set) check same value exists in 3 sets rows cols squares. If it is exists then return False. Optimal and advanced solution = Use bitmask.
+
 """
