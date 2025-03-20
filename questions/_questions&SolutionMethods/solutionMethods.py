@@ -15,6 +15,6 @@ LeetCode Problem 347 - Top K Frequent Elements :
     2 - Heap : Use heap to get rid of sorting phase. Pop until k elements remains. Append remainings to res.
     3 - Bucket Sort : Create a bucket -> freq = [[] for i in range(len(nums)+1)] then Use bucket sorting to avoid other types of sorting. With bucket sort we achieve o(n) instead of o(nlog(n))
 
-
+LeetCode Problem 271 - Encode Decode Strings : Create a simple encode algorithm like # + len + string etc and the decode the value according to the pattern. 
 
 """
