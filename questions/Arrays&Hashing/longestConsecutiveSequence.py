@@ -29,7 +29,7 @@ print(sol.longestConsecutive(nums))
 
 """
 
-Solution with Hash Set
+Solution with Hash Map
 time : O(n)
 space : o(n)
 
