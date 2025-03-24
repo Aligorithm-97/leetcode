@@ -2,7 +2,7 @@
 
 1 = LeetCode Problem 217 - Contains Duplicate : Create a set with given numbers and compare their lengths.
 
-2 = LeetCode Problem 242 - Valid Anagram : Can use sorted() function and compare them but better solution is using hash table. Use ord('a') etc. Traverse both strings and if the letter occurs in first string count[ord(i) - ord('a')] + 1 if the letter also occurs in second string count[ord(i) - ord('a')] -1 so if it is an anagram all values should be 0.
+2 = LeetCode Problem 242 - Valid Anagram : Can use sorted() function and compare them but better solution is using hash table. Use ord('a') and [0] * 26 for english letters etc. Traverse both strings and if the letter occurs in first string count[ord(i) - ord('a')] + 1 if the letter also occurs in second string count[ord(i) - ord('a')] -1 so if it is an anagram all values should be 0.
 
 3 = LeetCode Problem 1 - Two Sum : Create a map and use enumerate() function with for loop and if diff value is in map simply return pmap[diff] , i.
 
