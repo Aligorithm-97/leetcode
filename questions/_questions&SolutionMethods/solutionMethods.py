@@ -17,8 +17,10 @@
 
 6 = LeetCode Problem 271 - Encode Decode Strings : Create a simple encode algorithm like # + len + string etc and the decode the value according to the pattern. 
 
-7 = LeetCode Problem 238 - Product of Array Except Self : Can solve with brute force but it has n2 time complexity. Another solution is using division o(n) time o(1) space. And finally it can be solved with prefix suffix it is also o(n) time and o(1) space.
+7 = LeetCode Problem 238 - Product of Array Except Self : Can be solve with brute force but it has n2 time complexity. Another solution is using division o(n) time o(1) space. And finally it can be solved with prefix suffix it is also o(n) time and o(1) space.
 
 8 = LeetCode Problem 36 - Valid Sudoku : Use Hashset aka defaultdict(set) check same value exists in 3 sets rows cols squares. If it is exists then return False. Optimal and advanced solution = Use bitmask.
+
+9 = LeetCode Problem 128 - Longest Consecutive Sequence : Can be solved with hashSet -> check if the num -1 in the set and also check num + length and while it has num + length reassign longest value with max function. Also it has a solution with hashmap but hashset is enough.
 
 """
